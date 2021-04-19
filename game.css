@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&family=Open+Sans&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*
+font-family: 'Faster One', cursive;
+font-family: 'Open Sans', sans-serif;
+*/
+
+body {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content : center;
+}
+
+#main {
+	background-color: #FAF0CA;
+	text-align: center;
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.game_button {
+	background-color: #F95738;
+	font-size: 2em;
+	text-transform: uppercase;
+	width: 250px;
+	height: 75px;
+	border: 1px dotted black;
+	color: #FAF0CA;
+	font-weight: bold;
+	display: flex;
+}
+
+#welcome p {
+	width: 50vw;
+	margin: 15px;
+	padding: 15px;
+	border: 1px dotted black;
+}
+
+#welcome h1, #game_over h1 {
+	font-family: 'Faster One', cursive;
+	font-size: 6em;
+	text-shadow: 2px 2px 20px #fff;
+}
+
+#playing {
+	color: #fff;
+}
+
+
+#test {
+	position: absolute;
+	background-image: url('img/cookie.png');
+	background-size: 100% auto;
+	filter: drop-shadow(5px 5px 4px #000);
+	
+	animation-duration: 10s;
+	animation-name: rotation;
+  	animation-iteration-count: infinite;
+
+  	
+}
+
+	@keyframes rotation {
+  		from {
+    		transform: rotate(0deg);
+  		}
+		to {
+    		transform: rotate(360deg);
+  		}
+	}
+
+
+
+#test:hover {
+	animation-duration: 2s;
+	animation-name: zooming;
+}
+
+	@keyframes zooming {
+		from {
+			transform: scale(1);
+		}
+		to {
+			transform: scale(3);
+		}
+	}
+
+
+
+
+#score, #scores {
+	font-size: 3em;
+}
+
+#timing {
+	font-size: 5em;
+	opacity: 0.8;
+}
+
+
+.nonSelectionnable {
+	-moz-user-select: none; /* Firefox */
+	-webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */
+	-ms-user-select: none; /* Internet explorer depuis la version 10 et Edge */
+	user-select: none; /* Propriété standard */
+}
+
+
+table {
+	border: 2px solid red;
+	width: 100%;
+}
