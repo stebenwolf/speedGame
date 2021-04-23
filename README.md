@@ -3,3 +3,4 @@ My very first JS project: a speed game. Click as many cookies as possible before
 
 
 Hello, World! <333
+Jonathaaaan
